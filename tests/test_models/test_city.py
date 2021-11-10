@@ -14,6 +14,7 @@ class Test_CityModel(unittest.TestCase):
         self.model = City()
         self.model.save()
 
+
     def test_var_initialization(self):
         self.assertTrue(hasattr(self.model, 'name'))
         self.assertTrue(hasattr(self.model, 'state_id'))
