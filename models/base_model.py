@@ -1,9 +1,9 @@
 """Module for BaseModel
 """
 
-import uuid
 import datetime
 import json
+import uuid
 
 now = datetime.datetime.now
 
