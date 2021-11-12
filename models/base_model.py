@@ -17,8 +17,8 @@ class BaseModel:
         initialize base model
         """
         if args:
-            self.id = args[0]
-            self.created_at = args[1]
+            for k in args[0]:
+                setattr(self, k, args[0][k])
         else:
             self.id = str(uuid.uuid4())
             self.created_at = now
