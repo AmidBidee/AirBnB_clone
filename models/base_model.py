@@ -16,8 +16,6 @@ class BaseModel:
         """
         initialize base model
         """
-        self.id = str(uuid.uuid4())
-        self.created_at = now
 
         if kwargs:
             for k in kwargs.keys():
@@ -26,6 +24,9 @@ class BaseModel:
                 else:
                     if k in ('created_at', 'updated_at'):
                         setattr(self, k, datetime.datetime.fromisoformat(kwargs[k]))
+        else:
+            self.id = str(uuid.uuid4())
+            self.created_at = now
             
 
     def save(self):
