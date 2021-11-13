@@ -5,7 +5,6 @@ file storage module for AirBnB project
 
 import json
 from datetime import datetime
-from models import *
 
 class FileStorage:
     """
@@ -75,7 +74,7 @@ class FileStorage:
                 file_objects = json.loads(fd)
 
             for k in file_objects.keys():
-                if k is not in ('__class__', 'created_at', 'updated_at'):
+                if k not in ('__class__', 'created_at', 'updated_at'):
                     FileStorage.__objects[k] = file_objects[k]
                 else:
                     if k in ('created_at', 'updated_at'):

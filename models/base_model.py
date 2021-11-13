@@ -4,6 +4,7 @@
 import datetime
 import json
 import uuid
+import models
 
 now = datetime.datetime.now()
 
@@ -27,6 +28,7 @@ class BaseModel:
         else:
             self.id = str(uuid.uuid4())
             self.created_at = now
+            models.storage.new(self)
             
 
     def save(self):
@@ -34,6 +36,7 @@ class BaseModel:
         updates the public instance attribute updated_at
         """
         self.updated_at = datetime.datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """returns dictionary representation of the instance
