@@ -58,7 +58,3 @@ class BaseModel:
             str: representation of object
         """
         return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
-
-    @staticmethod
-    def to_json():
-        pass
