@@ -8,6 +8,7 @@ import models
 
 now = datetime.datetime.now()
 
+
 class BaseModel:
     """
     Base Model for Future Models
@@ -23,13 +24,14 @@ class BaseModel:
                 if k not in ('__class__', 'created_at', 'updated_at'):
                     setattr(self, k, kwargs[k])
                 else:
-                    if k in ('created_at', 'updated_at'):
-                        setattr(self, k, datetime.datetime.fromisoformat(kwargs[k]))
+                    if k in ('created_at',
+                             'updated_at'):
+                        setattr(self, k,
+                                datetime.datetime.fromisoformat(kwargs[k]))
         else:
             self.id = str(uuid.uuid4())
             self.created_at = now
             models.storage.new(self)
-            
 
     def save(self):
         """
@@ -61,4 +63,5 @@ class BaseModel:
         Returns:
             str: representation of object
         """
-        return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
+        return "[{}] ({}) {}".format(self.__class__.__name__,
+                                     self.id, self.__dict__)
