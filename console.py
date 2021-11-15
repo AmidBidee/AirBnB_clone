@@ -1,9 +1,23 @@
 #!/usr/bin/python3
+    """[summary]
+
+    Returns:
+        [type]: [description]
+    """
+
 import cmd
 from models import *
 
 
 class HBNBCommand(cmd.Cmd):
+    """[summary]
+
+    Args:
+        cmd ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
     prompt = '(hbnb)'
     storage.reload()
 
@@ -11,6 +25,9 @@ class HBNBCommand(cmd.Cmd):
                      "City", "Amenity", "Place", "Review"]
 
     def emptyline(self):
+        """
+        [summary]
+        """
         pass
 
     def do_quit(self, args):
