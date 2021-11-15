@@ -1,1 +1,68 @@
-{"BaseModel.1289b4ef-3ed3-4703-89d6-c17a147a7f4d": {"__class__": "Amenity", "id": "1289b4ef-3ed3-4703-89d6-c17a147a7f4d", "created_at": "2021-11-15T03:13:23.791680", "updated_at": "2021-11-15T03:13:23.803759"}, "BaseModel.c4ebf8ff-d5e9-4116-b11e-2e0bd7fd620a": {"__class__": "BaseModel", "id": "c4ebf8ff-d5e9-4116-b11e-2e0bd7fd620a", "created_at": "2021-11-15T03:13:23.791680", "name": "First model", "number": 8}, "BaseModel.9205a556-5eb8-46cc-b295-4f0640d96c19": {"__class__": "BaseModel", "id": "9205a556-5eb8-46cc-b295-4f0640d96c19", "created_at": "2021-11-15T03:13:23.791680", "name": "First model", "number": 8}, "BaseModel.7600ac07-a504-4f49-bdd2-241ed3fcdc54": {"__class__": "BaseModel", "id": "7600ac07-a504-4f49-bdd2-241ed3fcdc54", "created_at": "2021-11-15T03:13:23.791680", "name": "First model", "number": 8, "updated_at": "2021-11-15T03:13:23.809746"}, "BaseModel.1a7bdcf4-d768-4635-8464-dcd60cc17916": {"__class__": "BaseModel", "id": "1a7bdcf4-d768-4635-8464-dcd60cc17916", "created_at": "2021-11-15T03:13:23.791680", "name": "First model", "number": 8, "updated_at": "2021-11-15T03:13:23.810584"}, "BaseModel.1b9a0f88-a431-468f-8e02-1e39e363d4b3": {"__class__": "City", "id": "1b9a0f88-a431-468f-8e02-1e39e363d4b3", "created_at": "2021-11-15T03:13:23.791680", "updated_at": "2021-11-15T03:13:23.811923"}, "BaseModel.aae965cd-55c1-4e2b-b91c-d43b95f770c8": {"__class__": "Place", "id": "aae965cd-55c1-4e2b-b91c-d43b95f770c8", "created_at": "2021-11-15T03:13:23.791680", "updated_at": "2021-11-15T03:13:23.813909"}, "BaseModel.8dcb8f72-9d8c-48b5-af27-0e5c3c28f0f7": {"__class__": "Review", "id": "8dcb8f72-9d8c-48b5-af27-0e5c3c28f0f7", "created_at": "2021-11-15T03:13:23.791680", "updated_at": "2021-11-15T03:13:23.815688"}, "BaseModel.8c62129c-c613-449c-b921-40afd66502b2": {"__class__": "State", "id": "8c62129c-c613-449c-b921-40afd66502b2", "created_at": "2021-11-15T03:13:23.791680", "updated_at": "2021-11-15T03:13:23.817300"}, "BaseModel.770e4558-9bea-49a0-b5ba-0ec401355d22": {"__class__": "User", "id": "770e4558-9bea-49a0-b5ba-0ec401355d22", "created_at": "2021-11-15T03:13:23.791680", "updated_at": "2021-11-15T03:13:23.818863"}}
+{
+  "BaseModel.1289b4ef-3ed3-4703-89d6-c17a147a7f4d": {
+    "__class__": "Amenity",
+    "id": "1289b4ef-3ed3-4703-89d6-c17a147a7f4d",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "updated_at": "2021-11-15T03:13:23.803759"
+  },
+  "BaseModel.c4ebf8ff-d5e9-4116-b11e-2e0bd7fd620a": {
+    "__class__": "BaseModel",
+    "id": "c4ebf8ff-d5e9-4116-b11e-2e0bd7fd620a",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "name": "First model",
+    "number": 8
+  },
+  "BaseModel.9205a556-5eb8-46cc-b295-4f0640d96c19": {
+    "__class__": "BaseModel",
+    "id": "9205a556-5eb8-46cc-b295-4f0640d96c19",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "name": "First model",
+    "number": 8
+  },
+  "BaseModel.7600ac07-a504-4f49-bdd2-241ed3fcdc54": {
+    "__class__": "BaseModel",
+    "id": "7600ac07-a504-4f49-bdd2-241ed3fcdc54",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "name": "First model",
+    "number": 8,
+    "updated_at": "2021-11-15T03:13:23.809746"
+  },
+  "BaseModel.1a7bdcf4-d768-4635-8464-dcd60cc17916": {
+    "__class__": "BaseModel",
+    "id": "1a7bdcf4-d768-4635-8464-dcd60cc17916",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "name": "First model",
+    "number": 8,
+    "updated_at": "2021-11-15T03:13:23.810584"
+  },
+  "BaseModel.1b9a0f88-a431-468f-8e02-1e39e363d4b3": {
+    "__class__": "City",
+    "id": "1b9a0f88-a431-468f-8e02-1e39e363d4b3",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "updated_at": "2021-11-15T03:13:23.811923"
+  },
+  "BaseModel.aae965cd-55c1-4e2b-b91c-d43b95f770c8": {
+    "__class__": "Place",
+    "id": "aae965cd-55c1-4e2b-b91c-d43b95f770c8",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "updated_at": "2021-11-15T03:13:23.813909"
+  },
+  "BaseModel.8dcb8f72-9d8c-48b5-af27-0e5c3c28f0f7": {
+    "__class__": "Review",
+    "id": "8dcb8f72-9d8c-48b5-af27-0e5c3c28f0f7",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "updated_at": "2021-11-15T03:13:23.815688"
+  },
+  "BaseModel.8c62129c-c613-449c-b921-40afd66502b2": {
+    "__class__": "State",
+    "id": "8c62129c-c613-449c-b921-40afd66502b2",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "updated_at": "2021-11-15T03:13:23.817300"
+  },
+  "BaseModel.770e4558-9bea-49a0-b5ba-0ec401355d22": {
+    "__class__": "User",
+    "id": "770e4558-9bea-49a0-b5ba-0ec401355d22",
+    "created_at": "2021-11-15T03:13:23.791680",
+    "updated_at": "2021-11-15T03:13:23.818863"
+  }
+}

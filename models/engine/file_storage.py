@@ -5,6 +5,7 @@ file storage module for AirBnB project
 
 from datetime import datetime
 import json
+from models import *
 
 
 class FileStorage:
