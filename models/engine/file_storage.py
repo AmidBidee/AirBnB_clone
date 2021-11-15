@@ -6,6 +6,7 @@ file storage module for AirBnB project
 from datetime import datetime
 import json
 
+
 class FileStorage:
     """
     File storage class
@@ -13,14 +14,14 @@ class FileStorage:
     Attributes:
         [private]:
             __file_path[str]: filename
-            __objects[dict]: dictionary representing 
+            __objects[dict]: dictionary representing
                              stored objects
         [public]:
             all(self)
             new(self, obj)
             save(self)
             reload(self)
-            
+
     """
     __file_path = 'file.json'
     __objects = {}
@@ -70,8 +71,8 @@ class FileStorage:
 
         try:
             FileStorage.__objects = {}
-            with open(FileStorage.__file_path, 
-                    mode="r+", encoding="utf-8") as fd:
+            with open(FileStorage.__file_path,
+                      mode="r+", encoding="utf-8") as fd:
                 dict_objs = json.loads(fd.read())
 
             for k in dict_objs.keys():
@@ -79,6 +80,7 @@ class FileStorage:
                 FileStorage.__objects[k] = dict_objs[k]
                 for k_i in dict_objs[k].keys():
                     if k_i in ('created_at', 'updated_at'):
-                        FileStorage.__objects[k][k_i] = datetime.fromisoformat(dict_objs[k][k_i])
+                        FileStorage.__objects[k][k_i] = datetime.fromisoformat(
+                            dict_objs[k][k_i])
         except Exception as e:
             pass
