@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import unittest
 from datetime import datetime
 from models import *
@@ -9,10 +10,14 @@ class Test_UserModel(unittest.TestCase):
     """
 
     def setUp(self):
+        """setup
+        """
         self.model = User()
         self.model.save()
 
     def test_var_initialization(self):
+        """test init
+        """
         self.assertTrue(hasattr(self.model, "email"))
         self.assertTrue(hasattr(self.model, "password"))
         self.assertTrue(hasattr(self.model, "first_name"))

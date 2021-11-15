@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import unittest
 from datetime import datetime
 from models import *
@@ -9,10 +10,16 @@ class Test_PlaceModel(unittest.TestCase):
     """
 
     def setUp(self):
+        """
+        setup tests
+        """
         self.model = Place()
         self.model.save()
 
     def test_var_initialization(self):
+        """
+        test initialization
+        """
         self.assertTrue(hasattr(self.model, "city_id"))
         self.assertTrue(hasattr(self.model, "user_id"))
         self.assertTrue(hasattr(self.model, "name"))
