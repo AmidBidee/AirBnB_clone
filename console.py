@@ -218,7 +218,7 @@ class HBNBCommand(cmd.Cmd):
             elif len(new_arg) == 2:
                 try:
                     dict = eval(new_arg[1])
-                except:
+                except Exception:
                     return
                 for j in dict.keys():
                     self.do_update(cls_name + ' ' + new_arg[0][1:-3] + ' ' +
