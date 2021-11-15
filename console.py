@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-    """[summary]
+"""[summary]
 
     Returns:
         [type]: [description]
-    """
+"""
 
 import cmd
 from models import *
