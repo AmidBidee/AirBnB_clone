@@ -3,7 +3,7 @@
 """
 
 import cmd
-from models import *
+#from models import *
 
 
 class HBNBCommand(cmd.Cmd):
@@ -16,7 +16,7 @@ class HBNBCommand(cmd.Cmd):
         [type]: [description]
     """
     prompt = '(hbnb)'
-    storage.reload()
+    #storage.reload()
 
     valid_classes = ["BaseModel", "User", "State",
                      "City", "Amenity", "Place", "Review"]
