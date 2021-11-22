@@ -6,7 +6,7 @@ The purpose of this project is to recreate the AirBnB site, from the back-end da
 
 
 **Authors**
-- **Philip Yoo**, @AmidBidee
+- **Aaron Amid**, @AmidBidee
 
 ----------------------------------------
 
